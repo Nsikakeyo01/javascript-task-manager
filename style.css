@@ -1,80 +1,75 @@
-/* ==========================
-   GENERAL PAGE STYLE
-========================== */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f4f6f9;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
-/* ==========================
-   MAIN CONTAINER
-========================== */
 .container {
-    width: 50%;
+    width: 400px;
     margin: 50px auto;
     background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* ==========================
-   INPUT SECTION
-========================== */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+}
+
 .input-section {
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
 }
 
 input {
     padding: 10px;
-    width: 70%;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-/* ==========================
-   BUTTON STYLE
-========================== */
 button {
     padding: 10px;
-    margin-left: 5px;
     border: none;
-    background: #007bff;
-    color: white;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background: #0056b3;
+    opacity: 0.8;
 }
 
-/* ==========================
-   TASK LIST
-========================== */
+button:nth-child(2) {
+    background-color: green;
+    color: white;
+}
+
+button:nth-child(3) {
+    background-color: red;
+    color: white;
+}
+
 ul {
     list-style: none;
     padding: 0;
+    margin-top: 20px;
 }
 
 li {
-    background: #eee;
-    margin: 10px 0;
+    background: #e9ecef;
     padding: 10px;
+    margin-top: 5px;
     border-radius: 5px;
-
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-
-/* ==========================
-   COMPLETED TASK STYLE
-========================== */
-.completed {
-    text-decoration: line-through;
-    opacity: 0.6;
 }

@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Task Manager</title>
+    <title>Task Manager App</title>
 
     <!-- CSS File -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- External Library (SweetAlert2) -->
+    <!-- SweetAlert2 Library (External JS Library Requirement) -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
@@ -19,19 +19,19 @@
 
         <h1>Task Manager</h1>
 
-        <!-- Input Section -->
-        <div class="input-section">
-            <input type="text" id="taskInput" placeholder="Enter a new task">
+        <p class="subtitle">Add, manage, and track your daily tasks</p>
 
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Enter a task">
             <button onclick="addTask()">Add Task</button>
+            <button onclick="clearAllTasks()">Clear All</button>
         </div>
 
-        <!-- Task List Output -->
         <ul id="taskList"></ul>
 
     </div>
 
-    <!-- JavaScript File -->
+    <!-- JS File -->
     <script src="script.js"></script>
 
 </body>
